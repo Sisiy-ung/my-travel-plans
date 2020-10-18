@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="2dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="用户名"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <CheckBox
+        android:id="@+id/ckb_status"
+        android:layout_width="158dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="9dp"
+        android:text="记住密码"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegist"
+        app:layout_constraintStart_toStartOf="@+id/et_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/et_pwd" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/touxiang" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="登录"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegist"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckb_status" />
+
+    <Button
+        android:id="@+id/btnRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="190dp"
+        android:text="注册"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/ckb_status" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ckb_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
